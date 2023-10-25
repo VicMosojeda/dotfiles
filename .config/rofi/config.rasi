@@ -1,0 +1,103 @@
+configuration {
+  display-drun: "Applications:";
+  display-window: "Windows:";
+  drun-display-format: "{icon} {name}:";
+  font: "Hack Nerd Font 10";
+  modi: "window,run,drun,emoji,calc";
+  show-icons: true;
+  /* icon-theme: "Whitesur"; */
+}
+
+@theme "/dev/null"
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  /* var colors */
+  black: #000000;
+  white: #ffffff;
+  grey: #333;
+  red: #fa1505;
+  red-dark: #4f0702;
+  blue: #0d05fa;
+  blue-dark: #030142;
+  green: #0ff007;
+  green-dark: #055c02;
+  yellow: #f0e007;
+  yellow-dark: #544e01;
+  orange: #fc6805;
+  orange-dark: #662a02;
+  purple: #7905fc;
+  purple-dark: #24034a;
+  pink: #fc0589;
+  pink-dark: #fc0589;
+  cyan: #05f4fc;
+  cyan-dark: #014042;
+  /* festival */
+  orangeyellow: #FFB844;
+}
+/* style window */
+window {
+  width: 50%;
+  border-radius: 5;
+}
+
+/* style text application */
+element {
+  background-color: transparent;
+  text-color: @grey;
+}
+
+/* style select theme application */
+element selected {
+  text-color: @black;
+  background-color: @orangeyellow;
+}
+
+/* style select theme all application */
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+  vertical-aling: 0.5;
+}
+
+/* style icon application */
+element-icon {
+  size: 30;
+  background-color: transparent;
+}
+
+/* style bar intro text */
+entry {
+  background-color: @orangeyellow;
+  text-color: @black;
+}
+
+/* style  ¿? */
+/* inputbar {
+  children: [prompt, entry];
+  background-color: @green;
+} */
+
+/* style background rofi */
+listview {
+  background-color: @black;
+  columns: 1;
+  lines: 10;
+}
+
+/* style ¿? */
+/* mainbox {
+  children: [inputbar, listview];
+  background-color: @green;
+} */
+
+/* style background & foreground text title search */
+prompt {
+  enabled: true;
+  background-color: @black;
+  text-color: @orangeyellow;
+} 
