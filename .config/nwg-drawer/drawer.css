@@ -1,0 +1,56 @@
+@import '../../.cache/wal/colors-waybar.css';
+
+@define-color background-module @background;
+@define-color background-transparent @transparent;
+@define-color color-one @foreground;
+@define-color color-two @color4;
+@define-color color-three @color6;
+
+* {
+    font-family: firacode nerd font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-shadow: none;
+    color: @color-two;
+}
+
+window {
+    background-color: @background-module;
+}
+
+/* search entry */
+entry {
+    background-color: @color-three;
+}
+
+button, image {
+    background: none;
+    border: none;
+    color: @color-two;
+}
+
+button:hover {
+    background-color: alpha(@color6, .5);
+}
+
+/* in case you wanted to give category buttons a different look */
+#category-button {
+    padding: 0 10px;
+    margin: 0 10px;
+    background-color: @backgronud-transparent;
+}
+
+#category-button:hover { 
+    background-color: alpha(@color6, .5);
+}
+
+#pinned-box {
+    padding-bottom: 5px;
+    border-bottom: 1px outset @color-three;
+}
+
+/*#files-box {
+    padding: 5px;
+    border: 1px dotted gray;
+    border-radius: 15px
+}*/

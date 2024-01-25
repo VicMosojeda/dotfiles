@@ -1,0 +1,50 @@
+/*
+ * vim: ft=less
+ */
+@import '../../.cache/wal/colors-waybar.css';
+
+@define-color background-module @background;
+@define-color background-transparent @transparent;
+@define-color color-one @foreground;
+@define-color color-two @color4;
+@define-color color-three @color6;
+
+* {
+  font-family: firacode nerd font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-shadow: none;
+  color: @color-two;
+  box-shadow: none;
+  border: none;
+}
+
+.notification-row {
+  outline: none;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  background: @color-three;
+}
+
+.notification {
+  border-radius: 10px;
+  margin: 5px;
+  padding: 0;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 5px;
+}
+
+.close-button {
+  background: @background-transparent;
+  color: @color-two;
+}
+
+.close-button:hover {
+  background: @color-three;
+  transition: all .5s ease;
+}

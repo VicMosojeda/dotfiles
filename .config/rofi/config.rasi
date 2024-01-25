@@ -1,3 +1,5 @@
+
+
 configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
@@ -5,40 +7,18 @@ configuration {
   font: "Hack Nerd Font 10";
   modi: "window,run,drun,emoji,calc";
   show-icons: true;
-  /* icon-theme: "Whitesur"; */
 }
 
-@theme "/dev/null"
+/* style rofi dark */
+@theme "~/.cache/wal/colors-rofi-dark.rasi"
 
 * {
   border: 0;
   margin: 0;
   padding: 0;
   spacing: 0;
-
-  /* var colors */
-  black: #000000;
-  white: #ffffff;
-  grey: #333;
-  red: #fa1505;
-  red-dark: #4f0702;
-  blue: #0d05fa;
-  blue-dark: #030142;
-  green: #0ff007;
-  green-dark: #055c02;
-  yellow: #f0e007;
-  yellow-dark: #544e01;
-  orange: #fc6805;
-  orange-dark: #662a02;
-  purple: #7905fc;
-  purple-dark: #24034a;
-  pink: #fc0589;
-  pink-dark: #fc0589;
-  cyan: #05f4fc;
-  cyan-dark: #014042;
-  /* festival */
-  orangeyellow: #FFB844;
 }
+
 /* style window */
 window {
   width: 50%;
@@ -48,13 +28,13 @@ window {
 /* style text application */
 element {
   background-color: transparent;
-  text-color: @grey;
+  text-color: @foreground;
 }
 
 /* style select theme application */
 element selected {
-  text-color: @black;
-  background-color: @orangeyellow;
+  text-color: @foreground;
+  background-color: transparent;
 }
 
 /* style select theme all application */
@@ -68,36 +48,44 @@ element-text {
 element-icon {
   size: 30;
   background-color: transparent;
+  margin: 3;
+}
+
+element-text {
+  padding: 15;
 }
 
 /* style bar intro text */
 entry {
-  background-color: @orangeyellow;
-  text-color: @black;
+  background-color: @background-module;
+  text-color: @foreground;
+  padding: 10;
 }
 
-/* style  ¿? */
-/* inputbar {
-  children: [prompt, entry];
-  background-color: @green;
-} */
 
 /* style background rofi */
 listview {
-  background-color: @black;
+  background-color: @background-module;
   columns: 1;
   lines: 10;
 }
 
-/* style ¿? */
-/* mainbox {
+/* style contorne */
+mainbox {
   children: [inputbar, listview];
-  background-color: @green;
-} */
+  background-color: @background-module;
+}
 
 /* style background & foreground text title search */
 prompt {
   enabled: true;
-  background-color: @black;
-  text-color: @orangeyellow;
+  background-color: @background-module;
+  text-color: @foreground;
+  padding: 10;
 } 
+
+/* style contorne application */
+inputbar {
+  children: [prompt, entry];
+  background-color: @background-module;
+}

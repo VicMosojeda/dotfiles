@@ -144,22 +144,22 @@ keys = [
 
 ]
 
-# groups = [Group(i) for i in "12345"]
+groups = [Group(i) for i in "12345"]
 
-__groups = {
-    1:Group("", matches=[Match(wm_class=[terminal])]),
-    2:Group("󰖟", matches=[Match(wm_class=['brave-bin', 'google-chrome'])]),
-    #3:Group("󰅩", matches=[Match(wm_class=['subl', 'vim', 'nvim'])]),
-    3:Group("", matches=[Match(wm_class=['pcmanfm'])]),
-    # 5:Group("󰝚", matches=[Match(wm_class=['spotify', 'cmus'])]),
-    4:Group("", matches=[Match(wm_class=['simplescreenrecorder', 'obs-studio', 'mpv'])]),
-    5:Group("󱋊", matches=[Match(wm_class=['telegram-desktop'])]),
-}
+# __groups = {
+#      1:Group("", matches=[Match(wm_class=[terminal])]),
+#      2:Group("󰖟", matches=[Match(wm_class=['brave-bin', 'google-chrome'])]),
+#      #3:Group("󰅩", matches=[Match(wm_class=['subl', 'vim', 'nvim'])]),
+#      3:Group("", matches=[Match(wm_class=['nemo'])]),
+#      # 5:Group("󰝚", matches=[Match(wm_class=['spotify', 'cmus'])]),
+#      4:Group("", matches=[Match(wm_class=['simplescreenrecorder', 'obs-studio', 'mpv'])]),
+#      5:Group("󱋊", matches=[Match(wm_class=['telegram-desktop'])]),
+# }
 
-groups = [__groups[i] for i in __groups]
-
-def group_key(name):
-    return [k for k, g in __groups.items() if  g.name == name][0]
+# groups = [__groups[i] for i in __groups]
+# 
+# def group_key(name):
+#     return [k for k, g in __groups.items() if  g.name == name][0]
 
 for i in groups:
     keys.extend(
@@ -167,14 +167,16 @@ for i in groups:
             # mod1 + letter of group = switch to group
             Key(
                 [mod],
-                str(group_key(i.name)),
+                # str(group_key(i.name)),
+                i.name,
                 lazy.group[i.name].toscreen(),
                 desc="Switch to group {}".format(i.name),
             ),
             # mod1 + shift + letter of group = switch to & move focused window to group
             Key(
                 [mod, "shift"],
-                str(group_key(i.name)),
+                # str(group_key(i.name)),
+                i.name,
                 lazy.window.togroup(i.name, switch_group=True),
                 desc="Switch to & move focused window to group {}".format(i.name),
             ),
@@ -209,7 +211,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="novamono for powerline",
+    font="Fira Code Nerd Font",
     fontsize=15,
     padding=1,
 )

@@ -1,0 +1,50 @@
+@import '../../.cache/wal/colors-waybar.css';
+
+@define-color background-module @background;
+@define-color color-one @foreground;
+@define-color color-two @color4;
+
+* {
+    font-family: firacode nerd font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+	text-shadow: none;
+}
+
+window {
+    background-color: @background-module;
+    border-radius: 10px;
+}
+
+/* Outer bar container, takes all the window width/height */
+#outer-box {
+	margin: 0;
+}
+
+/* Inner bar container, surrounds buttons */
+#inner-box {
+	background-color: @background-module;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+button, image {
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: @color-two;
+}
+
+button:hover, image:hover {
+	color: @color-one;
+}
+
+button {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 5px;
+}
+
+button:hover {
+	background-color: @color-two;
+}
