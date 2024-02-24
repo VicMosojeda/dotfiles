@@ -1,39 +1,39 @@
 // Modules
-
 // Workspace
 {
-	"hyprland/workspaces" : {
+  "hyprland/workspaces": {
     "on-click": "activate",
-		"active-only": false,
+    "active-only": false,
     "all-oputputs": true,
     // "on-scroll-up": "hyprctl dispatch workspace -1",
     // "on-scroll-down": "hyprctl dispatch workspace +1",
     "format": "{icon}",
-    "format-icons" : {
-     "urgent": "",
-     "active": "",
-     "default": "",
-    "sort-by-number": false
+    "format-icons": {
+      "urgent": "",
+      "active": "󰮯",
+      "default": "󰊠",
+      "sort-by-number": false
     }
-	},
-
-// Hyprland Window
-"hyprland/window": {
-	"format": "{initialClass}",
-  "tooltip": true,
-  "rewrite": {
-    "firefox": "Mozilla Firefox",
-    "subl": "Sublime Text",
-    "kitty": "Terminal",
-    "com.obsproject.Studio": "OBS Studio",
-    "discord": "Discord",
-    "org.telegram.desktop": "Telegram",
-    "Brave-browser" : "Brave",
-    "LibreWolf" : "Libre Wolf"
   },
-	"separate-outputs": true
-	},
-
+  // Hyprland Window
+  "hyprland/window": {
+    "format": "{initialClass}",
+    "tooltip": true,
+    "rewrite": {
+      "firefox": "Mozilla Firefox",
+      "subl": "Sublime Text",
+      "kitty": "Terminal",
+      "com.obsproject.Studio": "OBS Studio",
+      "discord": "Discord",
+      "org.telegram.desktop": "Telegram",
+      "Brave-browser": "Brave",
+      "LibreWolf": "Libre Wolf",
+      "Microsoft-edge": "Microsoft Edge",
+      "org.kde.dolphin": "Dolphin",
+      "dev.warp.Warp": "Warp"
+    },
+    "separate-outputs": true
+  },
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
@@ -41,83 +41,88 @@
       "deactivated": ""
     }
   },
-
   "tray": {
     "icon-size": 15,
     "spacing": 10
   },
-
   "clock": {
     // "timezone": "America/New_York",
     "format": "󰥔  {:%I:%M %p -  %a/%b/%d}",
     // "format-alt": "{:%Y-%m-%d}",
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
-    	"mode": "month",
-    	"mode-mon-col": 3,
-    	"on-scroll": 1,
+      "mode": "month",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
       "on-click-right": "mode",
       "format": {
-        "months":     "<span color='#ffead3'><b>{}</b></span>",
-        "days":       "<span color='#ffffff'><b>{}</b></span>",
-        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-        "today":      "<span color='#66FBFF'><b><u>{}</u></b></span>"
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ffffff'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#66FBFF'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
     }
   },
-
-  "actions":  {
-    "on-click-right": "mode",
-    "on-click-forward": "tz_up",
-    "on-click-backward": "tz_down",
-    "on-scroll-up": "shift_up",
-    "on-scroll-down": "shift_down"
-  }
-},
-
   "cpu": {
     "format": "{usage}% 󰻠",
     "tooltip": false
   },
-
   "memory": {
     "format": "{}% 󰍛"
   },
-
   "temperature": {
     // "thermal-zone": 2,
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "󰏈", ""]
+    "format-icons": [
+      "",
+      "󰏈",
+      ""
+    ]
   },
-
   "backlight": {
     // "device": "acpi_video1",
     "format": "{percent}% {icon}",
-    "format-icons": ["󰃞", "󰃟","󰃠"]
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ]
     // "format-icons": ["", "", "", "", "", "", "", "", ""]
   },
-
   "battery": {
     "states": {
       // "good": 95,
       "warning": 30,
       "critical": 15
-  },
+    },
     "format": "{capacity}% {icon}",
     "format-charging": "{capacity}% ",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
     //module
     // "format-full": "",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "battery#bat2": {
     "bat": "BAT2"
   },
-
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
@@ -127,7 +132,6 @@
     "format-disconnected": "Disconnected ⚠",
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
-
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "{icon} {volume}%",
@@ -144,14 +148,13 @@
       "portable": "",
       "car": "",
       "default": [
-        "", 
-        "", 
+        "",
+        "",
         ""
       ]
+    },
+    "on-click-right": "pavucontrol"
   },
-  "on-click-right": "pavucontrol"
-  },
-
   "custom/notification": {
     "tooltip": false,
     "format": "{icon}",
@@ -172,5 +175,4 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   }
-
 }

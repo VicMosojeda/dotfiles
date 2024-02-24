@@ -11,9 +11,9 @@
 /*Space options general*/
 * {
     font-family:firacode nerd font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 30px;
 }
 
 
@@ -23,7 +23,7 @@ window#waybar {
     color: @color-one;
 }
 
-window#waybar.empty #window {   
+window#waybar.empty #window {
     background-color: transparent;
     border: 0px;
 
@@ -54,9 +54,6 @@ window#waybar.empty #window {
 #workspaces button.visible {
     background: @color-four;
 }
-
-
-
 
 /*Space Systemtray*/
 #custom-notification,

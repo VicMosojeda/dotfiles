@@ -1,12 +1,9 @@
 {
   "$schema": "~/.config/swaync/configSchema.json",
-  "positionX": "right",
+  "positionX": "left",
   "positionY": "top",
-  "control-center-margin-top": 0,
-  "control-center-margin-bottom": 0,
-  "control-center-margin-right": 0,
-  "control-center-margin-left": 0,
-  "notification-icon-size": 48,
+  "control-center-margin": 50,
+  "notification-icon-size": 40,
   "notification-body-image-height": 160,
   "notification-body-image-width": 90,
   "timeout": 6,
@@ -46,7 +43,7 @@
     "dnd",
     "notifications",
     "volume",
-    "backlight"
+    "brightnessctl"
   ],
   "widget-config": {
     "inhibitors": {
@@ -63,20 +60,20 @@
       "text": "No Molestar"
     },
     "label": {
-      "max-lines": 5,
+      "max-lines": 10,
       "text": "Label Text"
     },
     "mpris": {
-      "image-size": 60,
-      "image-radius": 12
+      "image-size": 50,
+      "image-radius": 10
     },
-     "volume": {
+    "volume": {
       "label": ""
     },
-    "backlight": {
+    "brightnessctl": {
       "label": "󰃟",
       "device": "acpi_video0",
-      "min": 10
+      "min": 5
     }
   }
 }
