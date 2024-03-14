@@ -3,7 +3,7 @@
 configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
-  drun-display-format: "{icon} {name}:";
+  /* drun-display-format: "{icon} {name}:"; */
   font: "Hack Nerd Font 10";
   modi: "window,run,drun,emoji,calc";
   show-icons: true;
@@ -14,6 +14,7 @@ configuration {
 
 * {
   border: 0;
+  border-radius: 5;
   margin: 0;
   padding: 0;
   spacing: 0;
@@ -21,8 +22,7 @@ configuration {
 
 /* style window */
 window {
-  width: 50%;
-  border-radius: 5;
+  width: 40%;
 }
 
 /* style text application */
@@ -41,14 +41,14 @@ element selected {
 element-text {
   background-color: transparent;
   text-color: inherit;
-  vertical-aling: 0.5;
+  /* vertical-aling: 0.5; */
 }
 
 /* style icon application */
 element-icon {
-  size: 30;
+  size: 20;
   background-color: transparent;
-  margin: 3;
+  margin: 0 5;
 }
 
 element-text {
@@ -67,7 +67,7 @@ entry {
 listview {
   background-color: @background-module;
   columns: 1;
-  lines: 10;
+  lines: 5;
 }
 
 /* style contorne */

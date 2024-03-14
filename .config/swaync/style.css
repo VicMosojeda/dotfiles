@@ -10,13 +10,13 @@
 @define-color color-three @color6;
 
 * {
-  font-family: firacode nerd font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
   font-size: 10px;
   font-weight: bold;
   text-shadow: none;
   color: @color-two;
   box-shadow: none;
   border: none;
+  border-radius: 10px;
 }
 
 .notification-row {
@@ -29,7 +29,6 @@
 }
 
 .notification {
-  border-radius: 10px;
   margin: 5px;
   padding: 0;
 }
@@ -48,3 +47,7 @@
   background: @color-three;
   transition: all .5s ease;
 }
+
+/*.control-center {
+  background: @background-transparent;
+}*/

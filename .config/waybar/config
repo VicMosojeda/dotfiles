@@ -3,8 +3,8 @@
 
     // Position of the bar
     "layer": "top",
-    "output": "eDP-1",
-    "margin": 2,
+    // "output": "eDP-1",
+    "margin": 5,
     "height": 0,
     "spacing": 3,
 

@@ -97,7 +97,7 @@
     "control-center-layer": {
       "type": "string",
       "description": "Layer of control center window",
-      "default": "none",
+      "default": "top",
       "enum": [
         "background",
         "bottom",

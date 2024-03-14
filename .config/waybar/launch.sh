@@ -11,7 +11,6 @@ done
 # Iniciar los procesos según la condición del usuario
 if [ "$USER" = "dreamsmeta" ]; then
 	waybar -c ~/.config/waybar/config &
-
 	swaync &
 else
 	waybar &
