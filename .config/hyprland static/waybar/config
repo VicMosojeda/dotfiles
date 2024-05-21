@@ -1,0 +1,30 @@
+{
+    // General Settings
+
+    // Position of the bar
+    "layer": "top",
+    // "output": "eDP-1",
+    "margin": 0,
+    "height": 0,
+    "spacing": 0,
+
+
+    // Load Modules
+    "include": ["~/.config/waybar/modules.json"],
+    "modules-left": [
+        "tray",
+        "backlight",
+        "pulseaudio"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+
+//    "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
+
+    "modules-right": [ 
+        "hyprland/window",
+        "hyprland/workspaces"
+    ]
+}
+

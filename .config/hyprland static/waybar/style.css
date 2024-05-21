@@ -1,0 +1,55 @@
+/*Space options general*/
+* {
+  font-family: firaCode Nerd Font;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 3px;
+  margin: 1px 2px;
+}
+
+/*Space waybar*/
+#waybar {
+  background: transparent;
+}
+
+#waybar.empty #window {
+  border: 0px;
+  background: transparent;
+}
+
+#window {
+  background: rgba(0, 0, 0, .5);
+}
+
+/*Space workspaces left*/
+#workspaces {
+  background: rgba(0, 0, 0, .5);
+}
+
+/*center*/
+#workspaces button {
+  transition: .5s all;
+  border: none;
+  outline: none;
+}
+
+/*right*/
+#workspaces button:hover,
+#workspaces button.active,
+#workspaces button.visible {
+  background: transparent;
+}
+
+/*Space Systemtray*/
+#custom-notification,
+#clock,
+#tray,
+#pulseaudio,
+#backlight,
+#cpu,
+#memory,
+#temperature {
+  background: rgba(0, 0, 0, .5);
+}
