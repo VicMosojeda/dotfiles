@@ -1,0 +1,8 @@
+# windows borders
+default_border pixel 0
+default_floating_border pixel 0
+gaps inner 8
+smart_gaps on
+
+#window float by default;
+for_window [app_id=".*"] floating enable;

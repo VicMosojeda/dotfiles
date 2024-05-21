@@ -1,0 +1,3 @@
+# User defined scripts
+bindsym $mod+e exec thunar
+bindsym $mod+l exec hyprlock
