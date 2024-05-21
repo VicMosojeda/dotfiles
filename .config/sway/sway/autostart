@@ -1,4 +1,0 @@
-# autostart programs
-exec nm-applet
-exec blueman-applet
-exec dunst

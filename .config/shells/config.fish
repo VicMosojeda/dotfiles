@@ -23,7 +23,7 @@ alias cat="bat"
 alias wupdate='~/.config/waybar/wupdate.sh'
 
 # node
-set -gx PATH "/home/linuxbrew/.linuxbrew/opt/node@20/bin" $PATH >>/home/dreamsmeta/.bash_profile
+set -gx PATH "/home/linuxbrew/.linuxbrew/opt/node@20/bin" $PATH >>/$HOME/.bash_profile
 set -gx LDFLAGS "-L/home/linuxbrew/.linuxbrew/opt/node@20/lib"
 set -gx CPPFLAGS "-I/home/linuxbrew/.linuxbrew/opt/node@20/include"
 # Java variables
