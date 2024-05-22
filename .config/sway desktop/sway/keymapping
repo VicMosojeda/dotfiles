@@ -1,0 +1,11 @@
+# User defined scripts
+bindsym $mod+Return exec kitty
+bindsym $mod+q kill
+bindsym $mod+space exec rofi -show drun
+bindsym $mod+shift+e exec rofi -show emoji 
+bindsym $mod+shift+c exec rofi -show calc
+bindsym $mod+e exec pcmanfm
+bindsym $mod+l exec hyprlock
+bindsym $mod+r exec hyprshot -m region
+bindsym $mod+shift+s exec hyprpicker -a
+bindsym $mod+delete exec nwg-bar
