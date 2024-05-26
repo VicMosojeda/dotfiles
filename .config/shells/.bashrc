@@ -25,11 +25,17 @@ alias cat='bat'
 alias wupdate='~/.config/qtile/wupdate.sh'
 alias wliveupdate='~/.config/qtile/wliveupdate.sh'
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
-if [ -s "/usr/share/nvm/nvm.sh" ]; then
-	. "/usr/share/nvm/nvm.sh" # Esta línea carga `nvm`
-fi
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# SKDMAN
-source "$HOME/.sdkman/bin/sdkman-init.sh"
+# Node
+echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/node@20/bin:$PATH"' >> $HOME/.bash_profile
+
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@20/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@20/include"
+
+# Configuración de Java
+export JAVA_HOME=$(brew --prefix openjdk)/libexec/openjdk.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH
+
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"

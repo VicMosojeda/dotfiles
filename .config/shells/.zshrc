@@ -110,10 +110,6 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# alias nvm/node
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/share/nvm/nvm.sh" ] && \. "/usr/share/nvm/nvm.sh"  # Esta línea carga `nvm`
-
 # alias lsd
 alias ls='lsd'
 
@@ -131,6 +127,17 @@ export PATH="~/$USER/bin:$PATH"
 # export PATH="~/.bin/swww:$PATH"
 # export PATH="~/.bin/swww-daemon:$PATH"
 
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-#source "$HOME/.sdkman/bin/sdkman-init.sh"
+# Node
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@20/bin:$PATH"
 
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@20/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@20/include"
+
+# Configuración de Java
+export JAVA_HOME=$(brew --prefix openjdk)
+export PATH=$JAVA_HOME/bin:$PATH
+
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
