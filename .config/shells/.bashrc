@@ -35,7 +35,7 @@ export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@20/lib"
 export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@20/include"
 
 # Configuración de Java
-export JAVA_HOME=$(brew --prefix openjdk)/libexec/openjdk.jdk/Contents/Home
+export JAVA_HOME="/home/linuxbrew/.linuxbrew/opt/openjdk"
 export PATH=$JAVA_HOME/bin:$PATH
 
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
