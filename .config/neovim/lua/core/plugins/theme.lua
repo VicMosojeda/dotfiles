@@ -1,3 +1,2 @@
-  vim.cmd[[ set background=dark ]]
-  vim.cmd[[ colorscheme onedark ]]
-
+vim.cmd[[ set background=dark ]]
+vim.cmd[[ colorscheme cyberdream ]]
