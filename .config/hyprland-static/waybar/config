@@ -3,18 +3,20 @@
 
     // Position of the bar
     "layer": "top",
-    // "output": "eDP-1",
+    "position": "top",
+    "output": "eDP-1",
     "margin": 0,
     "height": 0,
     "spacing": 0,
 
 
     // Load Modules
-    "include": ["~/.config/waybar/modules.json"],
+    "include": ["$HOME/.config/waybar/scripts/modules.json"],
     "modules-left": [
         "tray",
         "backlight",
-        "pulseaudio"
+        "pulseaudio",
+        "custom/cmus"
     ],
     "modules-center": [
         "clock"

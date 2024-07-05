@@ -1,6 +1,6 @@
 window {
   background: transparent;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #outer-box {
@@ -8,9 +8,9 @@ window {
 }
 
 #inner-box {
-  background: rgba (0, 0, 0, .5);
-  padding: 5px;
-  margin: 5px
+  background: rgba(0, 0, 0, .9);
+  padding: 900px;
+  margin: 5px;
 }
 
 button,
@@ -21,10 +21,12 @@ image {
 }
 
 button {
-  padding: 10px;
-  margin: 20px;
+  padding: 50px;
+  margin: 10px;
 }
 
+image:hover,
 button:hover {
-  background: rgba (255, 255, 255, .3)
+  background: #555;
+  color: #000000;
 }

@@ -5,9 +5,10 @@
 }
 
 #window {
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, .8);
   margin: auto;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: none;
 }
 
 #input {
@@ -23,9 +24,11 @@
 }
 
 #entry:selected {
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 10px;
 }
 
 #text {
   margin: 2px;
+  padding: 2px;
 }

@@ -7,11 +7,11 @@
     // "on-scroll-down": "hyprctl dispatch workspace +1",
     "format": "{icon}",
     "format-icons": {
-      "urgent": "",
-      "active": "",
-      "default": "",
+      "urgent": "",
+      "active": "",
+      "default": "",
       "sort-by-number": false
-    }
+  },
   },
   "hyprland/window": {
     "format": "{initialClass}",
@@ -23,13 +23,10 @@
       "com.obsproject.Studio": "OBS Studio",
       "discord": "Discord",
       "org.telegram.desktop": "Telegram",
-      "Google-chrome": "Chrome",
       "Brave-browser": "Brave",
-      "jetbrains-idea-ce": "IntelliJ IDEA",
-      "LibreWolf": "Libre Wolf",
-      "Microsoft-edge": "Microsoft Edge",
-      "org.kde.dolphin": "Dolphin",
       "dev.warp.Warp": "Warp",
+      "org.gnome.Nautilus": "Nautilus",
+      "beekeeper-studio": "Beekeeper Studio",
       "Terraria.bin.x86_64": "Terraria",
       "steam_app_230410": "Warframe",
       "steam_app_1928420": "Farlight 84",
@@ -98,7 +95,7 @@
     "format-icons": [
       ""
     ],
-    "format": "{icon}  {percent}%"
+    "format": "{icon} {percent}%"
     // "format-icons": ["", "", "", "", "", "", "", "", ""]
   },
   "battery": {
@@ -122,7 +119,7 @@
     "bat": "BAT2"
   },
   "network": {
-    "format-wifi": "{essid} ({signalStrength}%) ",
+    "format-wifi": " {essid} ({signalStrength}%) ",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
@@ -130,9 +127,9 @@
     "format-alt": "{ifname}: {ipaddr}/{cidr}"
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
+    "format": "{icon}{volume}%",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
     "format-source": "{volume}% ",
     "format-source-muted": "",
@@ -166,5 +163,16 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
+  },
+  "custom/cmus": {
+    "exec": "$HOME/.config/waybar/scripts/cmus.sh",
+    "interval": 1,
+    "max-length": 20,
+    "return-type": "plain",
+    "format": "{}",
+    "tooltip": false,
+    "on-click": "$HOME/.config/waybar/scripts/cmus.sh play-pause",
+    "on-click-middle": "$HOME/.config/waybar/scripts/cmus.sh next",
+    "on-click-right": "$HOME/.config/waybar/scripts/cmus.sh prev"
   }
 }

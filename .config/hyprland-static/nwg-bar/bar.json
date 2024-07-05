@@ -6,7 +6,7 @@
   },
   {
     "label": "Logout",
-    "exec": "exit",
+    "exec": "systemctl exit",
     "icon": "/usr/share/nwg-bar/images/system-log-out.svg"
   },
   {
