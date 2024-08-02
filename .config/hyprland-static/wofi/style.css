@@ -1,0 +1,33 @@
+* {
+  font-family: FiraCode Nerd Font;
+  color: #e5e9f0;
+  background: transparent;
+  border-radius: 10px;
+}
+
+#window {
+  background: rgba(0, 0, 0, .9);
+  margin: auto;
+  border: none;
+}
+
+#input {
+  padding: 5px;
+}
+
+#outer-box {
+  padding: 10px;
+}
+
+#entry {
+  padding: 5px;
+}
+
+#entry:selected {
+  background-color: rgba(255, 255, 255, .1);
+}
+
+#text {
+  margin: 2px;
+  padding: 2px;
+}
