@@ -1,0 +1,60 @@
+CONFIG
+
+{
+  "ignored_packages":
+  [
+          "Vintage",
+  ],
+  "word_wrap": "column",
+  "font_size": 10,
+  "font_options":["bold"],
+  "font_face": "fira code nerd font",
+  "theme": "Adaptive.sublime-theme",
+  "caret_style": "phase",
+  "caret_extra_width": 2
+}
+
+
+KEYMAPS
+
+[
+  { "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
+  /*Duplicar líneas*/
+  { "keys": ["ctrl+alt+up"], "command": "duplicate_line" },
+  { "keys": ["ctrl+alt+down"], "command": "duplicate_line" },
+  /*Comentario*/
+  { "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+  // Moverlineas
+  { "keys": ["alt+up"], "command": "swap_line_up" },
+  { "keys": ["alt+down"], "command": "swap_line_down" },
+
+
+  // Multicursor
+  { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
+
+  // terminus
+  { "keys": ["ctrl+t"], "command": "toggle_terminus_panel" },
+  // { "keys": ["ctrl+shift+t"], "command": "terminus_open" }
+]
+
+PACKAGES
+
+HTML-CSS-JS Prettify (Prettier)
+Autofilename
+emmet
+fileicons
+rainbowbrackets
+terminus
+lsp {
+    typescript
+    pylsp
+    lua
+    json
+    html
+    eslint
+    css
+}
+guttercolor
+codeium
