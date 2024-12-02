@@ -34,7 +34,7 @@ return require('packer').startup(function(use)
   use "christoomey/vim-tmux-navigator"
 
   -- codeium
-  use 'Exafunction/codeium.vim'
+  -- use 'Exafunction/codeium.vim'
   
   -- nvim tree for sidebar & telescope
   use "nvim-tree/nvim-tree.lua"
@@ -73,6 +73,12 @@ return require('packer').startup(function(use)
       "nvim-telescope/telescope.nvim",
       tag = "0.1.6",
       requires = {{"nvim-lua/plenary.nvim"}}
+  }
+    use {
+    "supermaven-inc/supermaven-nvim",
+    config = function()
+      require("supermaven-nvim").setup({})
+    end,
   }
 
   -- end if plugins section
