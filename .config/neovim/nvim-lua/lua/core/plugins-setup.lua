@@ -80,6 +80,15 @@ return require('packer').startup(function(use)
       require("supermaven-nvim").setup({})
     end,
   }
+    
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup {
+            -- Opcional: Configuración adicional si necesitas
+        }
+    end
+  }
 
   -- end if plugins section
   if packer_bootstrap then
