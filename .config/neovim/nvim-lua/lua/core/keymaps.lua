@@ -22,6 +22,9 @@ vim.api.nvim_set_keymap('i', '<C-t>', '<C-o>:terminal<CR>', { noremap = true, si
 
 vim.g.user_emmet_leader_key = '<C-x>'
 
+vim.api.nvim_set_keymap('n', '<Space>co', '<cmd>lua require("Comment.api").toggle.linewise.current()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Space>co', '<esc><cmd>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>', { noremap = true, silent = true })
+
 -- This keybinding uses jk as the escape key to exit a mode
 -- vim.api.nvim_set_keymap("i", "jk", "<ESC>", {noremap = true})
 
