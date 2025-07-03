@@ -1,0 +1,96 @@
+2025/07/02-16:43:04.711 726 Reusing MANIFEST /home/metadeth/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/07/02-16:43:04.714 726 Recovering log #892
+2025/07/02-16:43:04.807 726 Reusing old log /home/metadeth/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000892.log 
+2025/07/02-16:43:04.808 726 Delete type=2 #885
+2025/07/02-16:43:04.808 726 Delete type=2 #886
+2025/07/02-16:43:04.808 726 Delete type=2 #887
+2025/07/02-16:43:04.808 726 Delete type=2 #888
+2025/07/02-16:43:04.808 726 Delete type=2 #889
+2025/07/02-16:43:04.808 726 Delete type=2 #890
+2025/07/02-16:43:04.808 726 Delete type=2 #895
+2025/07/02-16:43:07.813 74c Level-0 table #915: started
+2025/07/02-16:43:07.945 74c Level-0 table #915: 959591 bytes OK
+2025/07/02-16:43:07.992 74c Delete type=0 #892
+2025/07/02-16:43:07.999 727 Manual compaction at level-0 from '\x00&\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00'\x00\x00\x00' @ 0 : 0; will stop at '\x00&\x00\x00\x05' @ 2894270 : 1
+2025/07/02-16:43:07.999 727 Compacting 1@0 + 0@1 files
+2025/07/02-16:43:08.177 727 Generated table #916@0: 19390 keys, 443119 bytes
+2025/07/02-16:43:08.199 727 Generated table #917@0: 545 keys, 14793 bytes
+2025/07/02-16:43:08.199 727 Compacted 1@0 + 0@1 files => 457912 bytes
+2025/07/02-16:43:08.245 727 compacted to: files[ 0 2 20 0 0 0 0 ]
+2025/07/02-16:43:08.246 727 Delete type=2 #915
+2025/07/02-16:43:08.250 726 Manual compaction at level-0 from '\x00&\x00\x00\x05' @ 2894270 : 1 .. '\x00'\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/07/02-16:43:11.707 726 Compacting 1@1 + 10@2 files
+2025/07/02-16:43:12.062 726 Generated table #918@1: 66778 keys, 2283067 bytes
+2025/07/02-16:43:12.209 726 Generated table #919@1: 3696 keys, 2153024 bytes
+2025/07/02-16:43:12.312 726 Generated table #920@1: 2892 keys, 2157795 bytes
+2025/07/02-16:43:12.426 726 Generated table #921@1: 2978 keys, 2159499 bytes
+2025/07/02-16:43:12.506 726 Generated table #922@1: 2628 keys, 2149642 bytes
+2025/07/02-16:43:12.576 726 Generated table #923@1: 2824 keys, 2148616 bytes
+2025/07/02-16:43:12.645 726 Generated table #924@1: 3418 keys, 2159310 bytes
+2025/07/02-16:43:12.773 726 Generated table #925@1: 33622 keys, 2230474 bytes
+2025/07/02-16:43:12.905 726 Generated table #926@1: 29656 keys, 2252645 bytes
+2025/07/02-16:43:13.007 726 Generated table #927@1: 21089 keys, 2187846 bytes
+2025/07/02-16:43:13.032 726 Generated table #928@1: 299 keys, 142061 bytes
+2025/07/02-16:43:13.032 726 Compacted 1@1 + 10@2 files => 22023979 bytes
+2025/07/02-16:43:13.078 726 compacted to: files[ 0 1 21 0 0 0 0 ]
+2025/07/02-16:43:13.079 726 Delete type=2 #896
+2025/07/02-16:43:13.079 726 Delete type=2 #897
+2025/07/02-16:43:13.079 726 Delete type=2 #898
+2025/07/02-16:43:13.079 726 Delete type=2 #899
+2025/07/02-16:43:13.079 726 Delete type=2 #900
+2025/07/02-16:43:13.080 726 Delete type=2 #901
+2025/07/02-16:43:13.080 726 Delete type=2 #902
+2025/07/02-16:43:13.080 726 Delete type=2 #903
+2025/07/02-16:43:13.080 726 Delete type=2 #904
+2025/07/02-16:43:13.080 726 Delete type=2 #905
+2025/07/02-16:43:13.080 726 Delete type=2 #916
+2025/07/02-16:43:14.615 727 Compacting 1@1 + 6@2 files
+2025/07/02-16:43:14.762 727 Generated table #929@1: 9242 keys, 2131735 bytes
+2025/07/02-16:43:15.008 727 Generated table #930@1: 114594 keys, 2266588 bytes
+2025/07/02-16:43:15.243 727 Generated table #931@1: 105614 keys, 2258010 bytes
+2025/07/02-16:43:15.524 727 Generated table #932@1: 105624 keys, 2257581 bytes
+2025/07/02-16:43:15.769 727 Generated table #933@1: 106295 keys, 2258083 bytes
+2025/07/02-16:43:15.819 727 Generated table #934@1: 8353 keys, 211717 bytes
+2025/07/02-16:43:15.819 727 Compacted 1@1 + 6@2 files => 11383714 bytes
+2025/07/02-16:43:15.866 727 compacted to: files[ 0 0 21 0 0 0 0 ]
+2025/07/02-16:57:30.672 726 Level-0 table #936: started
+2025/07/02-16:57:30.801 726 Level-0 table #936: 1253853 bytes OK
+2025/07/02-16:57:30.848 726 Delete type=2 #907
+2025/07/02-16:57:30.848 726 Delete type=2 #908
+2025/07/02-16:57:30.848 726 Delete type=2 #909
+2025/07/02-16:57:30.848 726 Delete type=2 #910
+2025/07/02-16:57:30.849 726 Delete type=2 #911
+2025/07/02-16:57:30.849 726 Delete type=2 #912
+2025/07/02-16:57:30.849 726 Delete type=0 #914
+2025/07/02-16:57:30.849 726 Delete type=2 #917
+2025/07/02-16:57:54.233 727 Compacting 1@0 + 0@1 files
+2025/07/02-16:57:54.333 727 Generated table #937@0: 22055 keys, 527966 bytes
+2025/07/02-16:57:54.360 727 Generated table #938@0: 193 keys, 10008 bytes
+2025/07/02-16:57:54.361 727 Compacted 1@0 + 0@1 files => 537974 bytes
+2025/07/02-16:57:54.405 727 compacted to: files[ 0 2 21 0 0 0 0 ]
+2025/07/02-16:57:54.406 727 Delete type=2 #936
+2025/07/02-16:58:04.888 727 Compacting 1@1 + 10@2 files
+2025/07/02-16:58:05.045 727 Generated table #939@1: 69107 keys, 2285299 bytes
+2025/07/02-16:58:05.136 727 Generated table #940@1: 5379 keys, 2157996 bytes
+2025/07/02-16:58:05.684 727 Generated table #941@1: 2900 keys, 2156814 bytes
+2025/07/02-16:58:05.755 727 Generated table #942@1: 3116 keys, 2158638 bytes
+2025/07/02-16:58:05.835 727 Generated table #943@1: 2495 keys, 2147822 bytes
+2025/07/02-16:58:05.905 727 Generated table #944@1: 2787 keys, 2147696 bytes
+2025/07/02-16:58:05.986 727 Generated table #945@1: 3400 keys, 2158654 bytes
+2025/07/02-16:58:06.111 727 Generated table #946@1: 31808 keys, 2223233 bytes
+2025/07/02-16:58:06.268 727 Generated table #947@1: 29516 keys, 2253364 bytes
+2025/07/02-16:58:06.370 727 Generated table #948@1: 22898 keys, 2193741 bytes
+2025/07/02-16:58:06.394 727 Generated table #949@1: 726 keys, 206215 bytes
+2025/07/02-16:58:06.394 727 Compacted 1@1 + 10@2 files => 22089472 bytes
+2025/07/02-16:58:06.440 727 compacted to: files[ 0 1 22 0 0 0 0 ]
+2025/07/02-16:58:06.441 727 Delete type=2 #918
+2025/07/02-16:58:06.441 727 Delete type=2 #919
+2025/07/02-16:58:06.441 727 Delete type=2 #920
+2025/07/02-16:58:06.441 727 Delete type=2 #921
+2025/07/02-16:58:06.441 727 Delete type=2 #922
+2025/07/02-16:58:06.441 727 Delete type=2 #923
+2025/07/02-16:58:06.441 727 Delete type=2 #924
+2025/07/02-16:58:06.441 727 Delete type=2 #925
+2025/07/02-16:58:06.441 727 Delete type=2 #926
+2025/07/02-16:58:06.442 727 Delete type=2 #927
+2025/07/02-16:58:06.442 727 Delete type=2 #937

@@ -1,0 +1,9 @@
+# User defined scripts
+bindsym $mod+Return exec kitty
+bindsym $mod+q kill
+bindsym $mod+space exec fuzzel
+bindsym $mod+e exec pcmanfm
+bindsym $mod+l exec grimshot copy area
+bindsym $mod+print exec grimshot copy screen
+bindsym $mod+shift+s exec hyprpicker -a
+bindsym $mod+delete exec nwg-bar

@@ -1,0 +1,30 @@
+window {
+  background: transparent;
+  border-radius: 5px;
+}
+
+#outer-box {
+  margin: 0px
+}
+
+#inner-box {
+  background: rgba (0, 0, 0, .5);
+  padding: 5px;
+  margin: 5px
+}
+
+button,
+image {
+  background: none;
+  border: none;
+  box-shadow: none
+}
+
+button {
+  padding: 10px;
+  margin: 20px;
+}
+
+button:hover {
+  background: rgba (255, 255, 255, .3)
+}
